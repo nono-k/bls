@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>青葉堂</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="show-guides">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="logo" href="#top">
+          <span>青葉堂</span>
+          <span lang="en">AOBA-DO</span>
+        </a>
+        <nav aria-label="主要">
+          <a href="#about"><span>私たちについて</span><span lang="en">About</span></a>
+          <a href="#news"><span>お知らせ</span><span lang="en">News</span></a>
+          <a href="#visit"><span>店舗案内</span><span lang="en">Visit</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">2026年の冬メニュー</p>
+        <p class="eyebrow" lang="en">WINTER MENU</p>
+        <h1>手仕事のパンと、季節の食卓</h1>
+        <p lang="en">SEASONAL TABLE</p>
+        <p>焼きたてを、ひと切れ。</p>
+        <p class="lead">小麦の香りが立つ朝に、焼きたてをひと切れ。青葉堂は、近所の人の毎日に寄り添うパン屋です。</p>
+        <p class="lead" lang="en">A neighborhood bakery for the smell of wheat in the morning, and one warm slice on the table.</p>
+      </section>
+
+      <section id="about">
+        <h2>私たちについて</h2>
+        <p>国産小麦と自家製の酵母で、朝からパンを焼いています。味は素朴に、食卓には少しの季節を添えたいと考えています。</p>
+        <p lang="en">We bake with domestic wheat and our own starter, and keep each loaf plain enough for every day.</p>
+      </section>
+
+      <section id="news">
+        <h2>お知らせ</h2>
+        <article>
+          <h3>日曜の朝市をはじめます</h3>
+          <p lang="en">SUNDAY MARKET</p>
+          <p>12月から、日曜の朝に店先で小さな朝市を開きます。ジャムとコーヒーを、焼きたてのパンと一緒にお渡しします。</p>
+          <p lang="en">From December, a small market on Sunday mornings. Jam and coffee leave with the bread.</p>
+        </article>
+      </section>
+
+      <section id="visit">
+        <h2>店舗案内</h2>
+        <p>東京都世田谷区代田一丁目。店は火・水が定休で、朝8時からパンがなくなり次第終了します。</p>
+        <p lang="en">Daita, Setagaya. Closed Tuesday and Wednesday. Open from 8:00 until the bread is gone.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 青葉堂</p>
+      <p lang="en">AOBA-DO</p>
+    </footer>
+
+    <aside class="panel" aria-label="文字詰め">
+      <button id="save" type="button">SAVE</button>
+      <p id="status" aria-live="polite">文字をクリックすると、そのテキスト全体が選ばれます</p>
+      <dl class="cheat">
+        <div>
+          <dt><kbd>← →</kbd></dt>
+          <dd>文字を移動</dd>
+        </div>
+        <div>
+          <dt><kbd>↑ ↓</kbd></dt>
+          <dd>テキストを移動</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + ← →</kbd></dt>
+          <dd>カーニング<small>Shift 追加でピッチ変更</small></dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + 0</kbd></dt>
+          <dd>カーニングリセット</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + Enter</kbd></dt>
+          <dd>改行</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + Shift + Enter</kbd></dt>
+          <dd>選択中ブロックの改行を全削除</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + S</kbd></dt>
+          <dd>保存</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + B</kbd></dt>
+          <dd>グレー背景</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + M</kbd></dt>
+          <dd>メニュー非表示</dd>
+        </div>
+        <div>
+          <dt><kbd>Alt + G</kbd></dt>
+          <dd>ガイド表示</dd>
+        </div>
+        <div>
+          <dt><kbd>Esc</kbd></dt>
+          <dd>UI非表示</dd>
+        </div>
+        <div>
+          <dt><kbd>⌘ + click</kbd></dt>
+          <dd>リンクを有効に</dd>
+        </div>
+      </dl>
+
+      <label for="caret-color">カーソルの色</label>
+      <input id="caret-color" type="color" value="#0d99ff" />
+      <label for="spacing">字間（em）</label>
+      <input id="spacing" type="number" step="any" inputmode="decimal" disabled />
+      <label for="format">書き出し</label>
+      <select id="format">
+        <option value="html">HTML</option>
+        <option value="pug">Pug</option>
+        <option value="astro">Astro</option>
+      </select>
+      <label class="visually-hidden" for="output">出力</label>
+      <textarea id="output" rows="4" readonly></textarea>
+    </aside>
+    <button id="show-ui" type="button" hidden>UI</button>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
